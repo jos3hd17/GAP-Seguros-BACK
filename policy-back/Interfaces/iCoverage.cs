@@ -1,10 +1,10 @@
 ﻿using System;
 namespace policy_back.Interfaces
 {
-    public class iRisk
+    public interface ICoverage
     {
-        public iRisk()
-        {
-        }
+       int MinRisk { get; set; }
+       int CoveragePercent { get; set; }
+       string CoverageName { get; set; }
     }
 }

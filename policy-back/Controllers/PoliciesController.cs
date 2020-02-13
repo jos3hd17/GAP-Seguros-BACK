@@ -4,18 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using policy_back.Data;
+using policy_back.Models;
 
 namespace policy_back.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/policies")]
     [ApiController]
     public class PoliciesController : ControllerBase
     {
         // GET: api/Policies
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Policy> Get()
         {
-            return new string[] { "value1", "value2" };
+            PolicyRepo repo = new PolicyRepo();
+            return repo.GetAllPolicy();
         }
 
         // GET: api/Policies/5
@@ -27,8 +30,10 @@ namespace policy_back.Controllers
 
         // POST: api/Policies
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Policy policy)
         {
+            PolicyRepo repo = new PolicyRepo();
+            repo.AddPolicy(policy);
         }
 
         // PUT: api/Policies/5
@@ -41,6 +46,7 @@ namespace policy_back.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
         }
     }
 }
