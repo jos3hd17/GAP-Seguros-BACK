@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "policy-back", "policy-back\policy-back.csproj", "{29E93276-D512-43A2-86EB-4878876EF80A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29E93276-D512-43A2-86EB-4878876EF80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E93276-D512-43A2-86EB-4878876EF80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E93276-D512-43A2-86EB-4878876EF80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E93276-D512-43A2-86EB-4878876EF80A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
